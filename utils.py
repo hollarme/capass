@@ -40,5 +40,11 @@ def put_data(uid, collection, data):
     db = st.session_state['db']
     collection = collection
     db[collection].replace_one({'_id':uid},data,True)
+    
+def get_question(collection, query):
+    db = st.session_state['db']
+    collection = collection
+    item = db[collection].find_one({'title':query})
+    return item if item else {}
 
 

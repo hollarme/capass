@@ -3,7 +3,7 @@ import pandas as pd
 import gridfs
 # import json
 
-from utils import get_data, get_all_data, put_data, init_connection
+from utils import get_data, get_all_data, put_data, init_connection, get_question
 
 
 st.set_page_config(page_title="Project Assessor Tool", layout="wide") 
@@ -65,8 +65,11 @@ with st.container(border=True):
     if st.button('Save', type="primary"):
         put_data(uid, st.session_state['score_collection'], score_fc)
         
+title
+        
 with st.container(border=True):
-    st.text_area(f'Questions for the title: :red[{title}]', st.session_state['db'][st.session_state['question_collection']].find_one({'title':title.strip()}).get('questions', "") if title else "")
+    st.text_area(f'Questions for the title: :red[{title}]', get_question(st.session_state['question_collection'], title).get('questions', "") if title else "")
+    # st.text_area(f'Questions for the title: :red[{title}]', st.session_state['db'][st.session_state['question_collection']].find_one({'title':title.strip()}).get('questions', "") if title else "")
     
 # except:
 #     st.swtich_page('information.py')
