@@ -30,7 +30,7 @@ try:
         score_obj = get_data(uid, st.session_state['score_collection'])
 
         if not score_obj:
-            score_data = pd.DataFrame({"Title":title, 'Design(8)': [0], 'Implementation(8)': [0], 'State of Project(5)': [0], 'Quality of Presentation(8)': [0], 'Understanding(10)': [0], 'Answer to Questions(10)': [0], 'Appearance(1)': [0]})
+            score_data = pd.DataFrame({"Title":title, 'Design(5)': [0], 'Implementation(5)': [0], 'Understanding(5)': [0], 'Quality of Presentation(5)': [0],  'Answer to Questions(8)': [0], 'Appearance(2)': [0], "Quality of Report and Poster(10)": [0],})
         else:
             score_data = pd.DataFrame(score_obj.get('score')[0], index=[0])
 
@@ -42,13 +42,13 @@ try:
             # width=1200,
             column_config={
                 "Title": st.column_config.TextColumn(required=True),
-                "Design(8)":  st.column_config.NumberColumn(required=True, min_value=0, max_value=8, step=0.1),
-                "Implementation(8)":  st.column_config.NumberColumn(required=True, min_value=0, max_value=8, step=0.1),
-                "State of Project(5)":  st.column_config.NumberColumn(required=True, min_value=0, max_value=5, step=0.1),
-                "Quality of Presentation(8)": st.column_config.NumberColumn(required=True, min_value=0, max_value=8, step=0.1),
-                "Understanding(10)": st.column_config.NumberColumn(required=True, min_value=0, max_value=10, step=0.1),
-                "Answer to Questions(10)":st.column_config.NumberColumn(required=True, min_value=0, max_value=10, step=0.1),
-                "Appearance(1)": st.column_config.NumberColumn(required=True, min_value=0, max_value=1, step=0.1),
+                "Design(5)":  st.column_config.NumberColumn(required=True, min_value=0, max_value=5, step=0.1),
+                "Implementation(5)":  st.column_config.NumberColumn(required=True, min_value=0, max_value=5, step=0.1),
+                "Understanding(5)": st.column_config.NumberColumn(required=True, min_value=0, max_value=5, step=0.1),
+                "Quality of Presentation(5)": st.column_config.NumberColumn(required=True, min_value=0, max_value=5, step=0.1),
+                "Answer to Questions(8)":st.column_config.NumberColumn(required=True, min_value=0, max_value=8, step=0.1),
+                "Appearance(2)": st.column_config.NumberColumn(required=True, min_value=0, max_value=2, step=0.1),
+                "Quality of Report and Poster(10)": st.column_config.NumberColumn(required=True, min_value=0, max_value=5, step=0.1),
             },
             hide_index=True,
 
