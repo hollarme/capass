@@ -48,7 +48,7 @@ with tab1:
     with st.container(border=True):
 
         st.markdown("""
-        ## Information for the staff Members:
+        ## Information for the Staff Members:
 
         - You could download the report and the posters for each student you are required to assess by :red[Thursday $11^{th}$ of April 2024]
         - You could download the files using the "file download" menu: just filter the list of students with assessor's name

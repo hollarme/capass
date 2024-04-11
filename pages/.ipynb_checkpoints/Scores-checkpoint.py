@@ -89,9 +89,9 @@ try:
                         {"Registration No.": student, 
                          "Names":get_data(student, st.session_state['map_collection']).get('Names', ""), 
                          "Title":get_data(student, st.session_state['map_collection']).get('Title', ""), 
-                         'Design(5)': [0], 'Implementation(5)': [0], 'Understanding(5)': [0], 
-                         'Quality of Presentation(5)': [0],  'Answer to Questions(8)': [0], 
-                         'Appearance(2)': [0], "Quality of Report and Poster(10)": [0]
+                         'Design(5)': '', 'Implementation(5)': '', 'Understanding(5)': '', 
+                         'Quality of Presentation(5)': '',  'Answer to Questions(8)': '', 
+                         'Appearance(2)': '', "Quality of Report and Poster(10)": ''
                         }
                                 )
 
