@@ -30,7 +30,7 @@ try:
 
         assessor = st.selectbox('Assessor', options=opts, index=0, key='superd')
 
-        matric_number = st.selectbox(f'Students in group :red[{int(list(set(data.where(data.Assessors.str.contains(assessor, regex=False, case=False)).dropna().Group))[0]) if assessor else ""}]', options=[""]+list(data.where(data.Assessors.str.contains(assessor, regex=False, case=False)).dropna()._id))
+        matric_number = st.selectbox(f'Students in group :red[{int(list(set(data.where(data.Assessors.str.contains(assessor, regex=False, case=False)).dropna(how="all").Group))[0]) if assessor else ""}]', options=[""]+sorted(list(data.where(data.Assessors.str.contains(assessor, regex=False, case=False)).dropna(how='all')._id)))
 
         try:
             st.download_button('download poster', fs_poster.get(matric_number).read() if matric_number else "", mime='text/pdf', disabled=True if not matric_number else False, use_container_width=True, file_name=f'{matric_number}_poster.pdf')
@@ -42,4 +42,4 @@ try:
         except:
             st.warning('The student you selected is yet to upload the requested file', icon="⚠️")
 except:
-    st.switch_page("information.py")
+    st.switch_page("Information.py")
