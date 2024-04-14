@@ -31,8 +31,11 @@ try:
                 assessor = st.selectbox('Assessor', options=opts, index=0, key='asse')
 
                 students_in_group = sorted(list(data.where(data.Assessors.str.contains(assessor, regex=False, case=False)).dropna(how='all')._id))
-
+                
+                
                 matric_number = st.selectbox(f'Students in group :red[{int(list(set(data.where(data.Assessors.str.contains(assessor, regex=False, case=False)).dropna(how="all").Group))[0]) if assessor else ""}]', options=[""]+students_in_group)
+                
+                st.caption(f"Student Names: :orange[{get_data(matric_number, st.session_state['map_collection']).get('Names', '')}]")
 
                 uid = f'{assessor}-{matric_number}'
 
@@ -80,7 +83,7 @@ try:
 
 
             with st.container(border=True):
-                st.text_area(f'Questions for the title: :red[{title}]', get_question(st.session_state['question_collection'], title).get('questions', "") if title else "")
+                st.text_area(f'Questions for the title: :red[{title}]', get_question(st.session_state['question_collection'], title.strip()).get('questions', "") if title else "")
 
             prows = []
             if assessor:
@@ -114,6 +117,8 @@ try:
                 students_with_supervisor = sorted(list(data.where(data.Supervisor.str.fullmatch(supervisor, case=False)).dropna(how='all')._id))
 
                 matric_number = st.selectbox(f'Students supervised by :red[{supervisor if supervisor else ""}]', options=[""]+students_with_supervisor)
+                
+                st.caption(f"Student Names: :orange[{get_data(matric_number, st.session_state['map_collection']).get('Names', '')}]")
 
                 uid = f'{supervisor}-{matric_number}'
 
