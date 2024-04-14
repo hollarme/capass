@@ -49,18 +49,21 @@ with tab1:
 
         st.markdown("""
         ## Information for the Staff Members:
-
-        - You could download the report and the posters for each student you are required to assess by :red[Thursday $11^{th}$ of April 2024]
-        - You could download the files using the "file download" menu: just filter the list of students with assessor's name
-        - You could prepare a question pool for each student using the "question pool" menu
-        - Scores and feedbacks could either be uploaded or recorded directly on the app
-            - You will (at the minimum) need to score the qualities of the posters and reports before the presentation using this app
+        
+        - Please note that :red[EEE501 defense] for the 2022/2023 academic session will take place on :red[Wednesday $17^{th}$ through Thursday $18^{th}$]
+        - You can download the report and the posters for each student you are required to assess by :red[Monday $15^{th}$ of April 2024]
+        - You can download the files using the "File download" menu: just filter the list of students with assessor's name
+            - Check the 'zip files' checkbox to download all the required files at once
+        - You can prepare and store questions for each student using the "Question pool" menu
         - Each poster presentation transaction between an assessor and the student should not take more than 10 mins: 5 minutes for the presentation and 5 for question and answers
-        - Note that you can download and use the score sheets from the scores menu instead of filling scores online
+        - Each assessor can attend individually to the students in their respective groups 
+        - Download the score sheets from the "Scores" menu
+        - The supervisor scores and the defence scores are required to be processed with :red[excel sheet] by people designated to do so for each group 
+        - The processed scores should be submitted via whatsapp for quick processing
 
         ## Information to the Students:
 
-        - Please be aware that :red[EEE501 defense] for the 2022/2023 academic session will take place on :red[Tuesday $16^{th}$ and Wednesday $17^{th}$] of the month of April 2024
+        - Please be aware that :red[EEE501 defense] for the 2022/2023 academic session will take place on :red[Wednesday $17^{th}$ through Thursday $18^{th}$] of the month of April 2024
         - It shall take the form of a poster presentation (see the poster template below) where the assessors and passerbys will have the chance to interact with the presenters
         - You will also need to write a concise report (3 to 5 pages) on your work (see the report link below)
         - Both the report and the poster are to be submitted with file upload menu, on or before :red[midnight Thursday $11^{th}$ of April 2024].
