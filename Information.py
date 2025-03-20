@@ -11,7 +11,7 @@ if 'client' not in st.session_state:
     st.session_state['client'] = init_connection()
     
 if 'db' not in st.session_state:
-    st.session_state['db'] = st.session_state['client'].capstoneDB
+    st.session_state['db'] = st.session_state['client'].capstoneDB_2324
 
 # if 'collection' not in st.session_state:
 #     st.session_state['collection'] = 'title_information_form'
