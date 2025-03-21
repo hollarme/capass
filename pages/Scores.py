@@ -23,7 +23,7 @@ try:
 
     if score_for == ":red[Defence Score Sheet]":
 
-        opts = ["",'Mr. O. Olorunniwo', 'Dr. A. Aransiola', 'Dr. E. Obayiuwana', 'Prof. T. K. Yesufu', 'Dr. F. K. Ariyo', 'Dr. A. A. Ogunseye', 'Mr. Olayiwola Pipelolu', 'Dr. K. P. Ayodele', 'Dr. O. Ilori', 'Mr. E. Akinboboye', 'Dr. A. A. Olawole', 'Dr. A. A. Fisusi ', 'Dr. A. M. Jubril']
+        opts = ["",'Mr. O. Olorunniwo', 'Dr. A. Aransiola', 'Dr. E. Obayiuwana', 'Prof. T. K. Yesufu', 'Dr. F. K. Ariyo', 'Dr. A. A. Ogunseye', 'Mr. Olayiwola Pipelolu', 'Dr. K. P. Ayodele', 'Dr. O. Ilori', 'Mr. E. Akinboboye', 'Dr. A. A. Olawole', 'Dr. A. A. Fisusi', 'Dr. A. M. Jubril']
 
         with st.status("", expanded=True) as status:
             with st.container(border=True):
@@ -108,7 +108,7 @@ try:
         with st.status("", expanded=True) as status:
             with st.container(border=True):
 
-                opts = ["",'Mr. Olorunniwo', 'Dr. Aransiola', 'Dr. Obayiuwana', 'Dr. Yesufu', 'Dr. Ariyo', 'Dr. Ogunseye', 'Mr. Olayiwola', 'Dr. Ayodele', 'Dr. Ilori', 'Mr. Akinboboye', 'Dr. Olawole', 'Dr. Babalola', 'Dr. Ogunba', 'Dr. Fisusi', 'Dr. Jubril']
+                opts = ["",'Mr. O. Olorunniwo', 'Dr. A. Aransiola', 'Dr. E. Obayiuwana', 'Prof. T. K. Yesufu', 'Dr. F. K. Ariyo', 'Dr. A. A. Ogunseye', 'Mr. Olayiwola Pipelolu', 'Dr. K. P. Ayodele', 'Dr. O. Ilori', 'Mr. E. Akinboboye', 'Dr. A. A. Olawole', 'Dr. A. A. Fisusi', 'Dr. A. M. Jubril']
 
                 supervisor = st.selectbox('Supervisor', options=opts, index=0, key='super')
 
