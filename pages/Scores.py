@@ -166,7 +166,7 @@ try:
                         prows.append(
                             {"Registration No.": student, 
                              "Names":get_data(student, st.session_state['map_collection']).get('Names', ""), 
-                             "Title":get_data(student, st.session_state['map_collection']).get('Title', ""), 
+                             "Title":'',#get_data(student, st.session_state['map_collection']).get('Title', ""), 
                              "Interaction(20)": '', 'Understanding(10)': '', 'State of Project(10)': '',  
                              "Dedication(10)": '', "Quality of Report(10)": ''
                             }
